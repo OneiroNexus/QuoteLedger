@@ -1,0 +1,13 @@
+{
+  "title": "QuoteLedger",
+  "description": "A local Python tool for recording research leads, matching retained quotations and binding human review to claim and source records. The accompanying methods paper is licensed separately under CC BY 4.0.",
+  "upload_type": "software",
+  "version": "0.1.0",
+  "creators": [
+    {
+      "name": "Weis, Aaron Michael",
+      "orcid": "0009-0002-1906-148X"
+    }
+  ],
+  "license": "MIT"
+}

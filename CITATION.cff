@@ -1,9 +1,8 @@
 cff-version: 1.2.0
-message: "Please cite the exact QuoteLedger version used."
+message: "Please cite the exact software version used."
 title: "QuoteLedger"
 type: software
 version: 0.1.0
-repository-code: "https://github.com/OneiroNexus/QuoteLedger"
 authors:
   - family-names: Weis
     given-names: Aaron Michael
@@ -18,3 +17,5 @@ keywords:
   - evidence records
   - research reproducibility
   - quotation provenance
+license: MIT
+repository-code: "https://github.com/OneiroNexus/QuoteLedger"
