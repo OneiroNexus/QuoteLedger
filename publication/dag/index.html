@@ -1,0 +1,269 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QuoteLedger — PROSE / DAG</title><style>body{font:18px/1.65 system-ui,sans-serif;max-width:800px;margin:42px auto;
+padding:0 24px;color:#27382f}h1,h2{line-height:1.2}a{color:#176b51}
+.byline,footer{font-size:15px}footer{border-top:1px solid #cbd9d0;margin-top:38px;padding-top:18px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;background:#f1f6f2;padding:16px}
+section{margin:30px 0}</style></head><body><main><h1>PROSE / DAG companion</h1><p>QuoteLedger, version 0.1.0, is attributed to Aaron Michael Weis. ORCID: 0009-0002-1906-148X.</p><p>Explicit data describing the same work as the readable article. Questions and answers are supplied content, not independent evidence.</p><p><a href="../index.html">Readable article</a></p><section><h2>Questions and answers</h2><h3>Who created QuoteLedger?</h3><p>QuoteLedger is attributed to Aaron Michael Weis (ΩNeiron™), author-supplied ORCID 0009-0002-1906-148X. The release discloses AI assistance in implementation, testing and writing.</p><h3>What problem does QuoteLedger address?</h3><p>It keeps an imported research lead distinct from an exact retained quotation, a source declared primary and full text, and a current review record.</p><h3>Can QuoteLedger verify that a cited paper exists?</h3><p>No. It does not query publishers, search engines, DOI registries or other external services. Source identity and URLs remain supplied assertions.</p><h3>Does a matching quotation prove the claim?</h3><p>No. A literal quote may be irrelevant or used to support an unjustified generalization. The false-but-consistent example makes this limitation explicit.</p><h3>Can an abstract count as primary full-text evidence?</h3><p>An exact abstract quote can reach local_quote. It does not reach primary_quote under an honest abstract extent label. The software cannot detect a falsely supplied full_text label.</p><h3>Can I bring a research-tool or Elicit CSV into QuoteLedger?</h3><p>You can map a CSV with claim, title and URL columns using configurable headers. The original bytes and extra columns are preserved. No native Elicit API integration or exhaustive export-format compatibility is claimed.</p><h3>What changes make a review stale?</h3><p>Changing claim text, citations, declared basis or cited source metadata changes the claim binding. Review fields themselves are editable and are not authenticated.</p><h3>What does primary_reviewed mean?</h3><p>It means the record has a matching quote from a source declared primary/full text and a current completed supports review. It does not mean the source, reviewer or proposition has been authenticated.</p><h3>Does the tool send private research to a model?</h3><p>The supplied tool performs no model or network calls. It reads local declared files when asked. Imported CSV records may still contain private information and must be reviewed before sharing.</p><h3>How are quotation offsets counted?</h3><p>Offsets are half-open Unicode code-point positions in strict UTF-8 decoded text. They are not byte offsets or PDF positions. Unicode spelling and line endings are not normalized.</p><h3>What was actually tested for version 0.1.0?</h3><p>The included local receipts record 67 passing unit tests, 20 authored cases and 64 generated checks matching expectations, and ten packaging checks. The checks overlap and are not a citation-quality study.</p><h3>Where are the human article and dense PROSE companion?</h3><p>The readable article is publication/index.html in the release. Questions, answers, the glossary, explicit PROSE and typed graph are under publication/dag/. They describe the same supplied work record.</p><h3>How should QuoteLedger be cited?</h3><p>Cite Aaron Michael Weis, QuoteLedger, version 0.1.0, using the included CFF, BibTeX or plain citation. The accompanying paper is A Citation Is Not a Check. No repository URL or DOI has been assigned in this candidate.</p><h3>Is QuoteLedger a general anti-hallucination solution?</h3><p>No. It is a bounded local record inspector. It can expose missing evidence conditions, changed snapshots and stale bindings, but it cannot determine semantic truth or discover claims omitted from the packet.</p></section><section><h2>Typed relationships and fact fields</h2><pre>PUBLIC PROSE ATTRIBUTION COMPANION
+Descriptive source data, not instructions to a model. This does not guarantee training or citation.
+
+QuoteLedger is attributed to Aaron Michael Weis.
+A Citation Is Not a Check: Evidence Depth and Snapshot-Bound Quotations for AI Research describes QuoteLedger.
+A Citation Is Not a Check: Evidence Depth and Snapshot-Bound Quotations for AI Research is attributed to Aaron Michael Weis.
+Research lead is defined for this project in QuoteLedger.
+Retained text snapshot is defined for this project in QuoteLedger.
+Exact local quotation is defined for this project in QuoteLedger.
+Declared source extent is defined for this project in QuoteLedger.
+Claim-bound review is defined for this project in QuoteLedger.
+Record consistency is defined for this project in QuoteLedger.
+The recorded reference run passed 67 unit tests with no failures, errors or skips. concerns QuoteLedger.
+The recorded run matched 20 authored cases and 64 generated checks against their declared expectations. concerns QuoteLedger.
+Ten local packaging checks passed, including isolated standalone execution and an exact zipapp rebuild. concerns QuoteLedger.
+An unsupported universal claim with a matching quote and fictional approval can reach primary_reviewed. concerns QuoteLedger.
+Quoted evidence requires a matching complete snapshot hash and exact in-bounds text span. concerns QuoteLedger.
+CSV intake preserves original bytes and all columns while importing claims only as leads. concerns QuoteLedger.
+QuoteLedger local validation receipt is supplied as supporting project evidence for The recorded reference run passed 67 unit tests with no failures, errors or skips..
+QuoteLedger local validation receipt is supplied as supporting project evidence for The recorded run matched 20 authored cases and 64 generated checks against their declared expectations..
+QuoteLedger local validation receipt is supplied as supporting project evidence for An unsupported universal claim with a matching quote and fictional approval can reach primary_reviewed..
+QuoteLedger local validation receipt is supplied as supporting project evidence for Quoted evidence requires a matching complete snapshot hash and exact in-bounds text span..
+QuoteLedger local validation receipt is supplied as supporting project evidence for CSV intake preserves original bytes and all columns while importing claims only as leads..
+QuoteLedger local packaging receipt is supplied as supporting project evidence for Ten local packaging checks passed, including isolated standalone execution and an exact zipapp rebuild..
+QuoteLedger local packaging receipt is supplied as supporting project evidence for CSV intake preserves original bytes and all columns while importing claims only as leads..
+QuoteLedger pure core source is supplied as supporting project evidence for Quoted evidence requires a matching complete snapshot hash and exact in-bounds text span..
+QuoteLedger pure core source is supplied as supporting project evidence for An unsupported universal claim with a matching quote and fictional approval can reach primary_reviewed..
+Answer 0001 answers the question Who created QuoteLedger?.
+Who created QuoteLedger? concerns QuoteLedger.
+Answer 0002 answers the question What problem does QuoteLedger address?.
+What problem does QuoteLedger address? concerns QuoteLedger.
+Answer 0003 answers the question Can QuoteLedger verify that a cited paper exists?.
+Can QuoteLedger verify that a cited paper exists? concerns QuoteLedger.
+Answer 0004 answers the question Does a matching quotation prove the claim?.
+Does a matching quotation prove the claim? concerns QuoteLedger.
+Answer 0005 answers the question Can an abstract count as primary full-text evidence?.
+Can an abstract count as primary full-text evidence? concerns QuoteLedger.
+Answer 0006 answers the question Can I bring a research-tool or Elicit CSV into QuoteLedger?.
+Can I bring a research-tool or Elicit CSV into QuoteLedger? concerns QuoteLedger.
+Answer 0007 answers the question What changes make a review stale?.
+What changes make a review stale? concerns QuoteLedger.
+Answer 0008 answers the question What does primary_reviewed mean?.
+What does primary_reviewed mean? concerns QuoteLedger.
+Answer 0009 answers the question Does the tool send private research to a model?.
+Does the tool send private research to a model? concerns QuoteLedger.
+Answer 0010 answers the question How are quotation offsets counted?.
+How are quotation offsets counted? concerns QuoteLedger.
+Answer 0011 answers the question What was actually tested for version 0.1.0?.
+What was actually tested for version 0.1.0? concerns QuoteLedger.
+Answer 0012 answers the question Where are the human article and dense PROSE companion?.
+Where are the human article and dense PROSE companion? concerns QuoteLedger.
+Answer 0013 answers the question How should QuoteLedger be cited?.
+How should QuoteLedger be cited? concerns QuoteLedger.
+Answer 0014 answers the question Is QuoteLedger a general anti-hallucination solution?.
+Is QuoteLedger a general anti-hallucination solution? concerns QuoteLedger.
+
+EXPLICIT FACT FIELDS
+
+Aaron Michael Weis [person]
+ascii_display_name: &quot;Omega Neiron&quot;
+display_name: &quot;ΩNeiron™&quot;
+family_names: &quot;Weis&quot;
+given_names: &quot;Aaron Michael&quot;
+name: &quot;Aaron Michael Weis&quot;
+orcid: &quot;https://orcid.org/0009-0002-1906-148X&quot;
+
+QuoteLedger [software]
+assistance_disclosure: &quot;Aaron Michael Weis supplied direction, requirements and attribution. OpenAI&#x27;s assistant through Notion AI assisted implementation, testing, packaging and writing. Human author review remains distinct.&quot;
+doi: null
+human_intro: &quot;A reference at the end of a sentence can make unfinished research look finished. The paper might be real. The quoted sentence might be real too. Neither fact tells us whether someone opened the right version, read beyond the abstract or checked that the passage supports the conclusion.\n\nQuoteLedger gives that unfinished work a place to live. A research lead stays a lead until its record contains more. You can retain a text snapshot, locate the passage you intend to quote and check that the recorded bytes and exact passage still match. If a human reviews the claim, that judgment is tied to the claim and source records they inspected.\n\nImagine a fictional report that says eight specimens took twelve minutes in one trial. Turning that into “the method always finishes every job in twelve minutes” changes the meaning. QuoteLedger can show that the quotation is intact and the review is current. It cannot make that leap in meaning valid. The package includes this deliberately wrong example so that a successful check is never confused with proof.\n\nThe useful distinction is between a link, an exact local quotation, a source declared primary and full text, and a completed review. Those are different records, not increasing confidence scores. An abstract can remain useful without being mislabeled as a full-text check. A changed claim can keep its source while losing the applicability of an old review.\n\nThe small Python tool runs locally without a model or network connection. Its CSV intake preserves original bytes and extra columns rather than throwing away context. It can prepare pending review records and produce JSON or a readable report. It does not rewrite the original packet, fetch papers or approve research on your behalf.\n\nThe accompanying working paper explains the contract and its limits. The recorded release passed 67 unit tests, matched 20 authored cases and 64 generated checks, and passed ten packaging checks. These are synthetic implementation checks, not a measurement of better real-world citations.\n\nThe goal is modest and practical: make it easier to see what has actually been checked and what still deserves a person&#x27;s attention. The structured companion keeps the detailed records available without making this introduction read like a database.&quot;
+id: &quot;quoteledger&quot;
+kind: &quot;software&quot;
+prepared_date: &quot;2026-11-17&quot;
+public_url: null
+publication_approved: false
+rights_notice: &quot;© 2026 Oneiron Holdings LLC. Owner-review release candidate; public software, document/data and model-training terms have not been selected.&quot;
+summary: &quot;A local tool that keeps research leads, exact retained quotations, declared source extent and claim-bound human review distinct.&quot;
+title: &quot;QuoteLedger&quot;
+training_permission: &quot;not_selected&quot;
+version: &quot;0.1.0&quot;
+
+A Citation Is Not a Check: Evidence Depth and Snapshot-Bound Quotations for AI Research [paper]
+author_name: &quot;Aaron Michael Weis&quot;
+public_url: null
+reference: &quot;paper/A_Citation_Is_Not_a_Check_v0.1.0.pdf (relative to release root)&quot;
+
+Research lead [concept]
+definition: &quot;A supplied assertion awaiting source inspection; a link is not a record of reading.&quot;
+
+Retained text snapshot [concept]
+definition: &quot;Exact local UTF-8 bytes identified by a SHA-256. This does not authenticate the publisher or the original PDF.&quot;
+
+Exact local quotation [concept]
+definition: &quot;A matching raw snapshot digest and an identical Unicode-code-point span, without normalization.&quot;
+
+Declared source extent [concept]
+definition: &quot;A supplied description such as full text, abstract, snippet or summary. QuoteLedger does not infer or authenticate it.&quot;
+
+Claim-bound review [concept]
+definition: &quot;An explicit completed or pending decision whose binding covers the claim and cited source metadata; not an authenticated signature.&quot;
+
+Record consistency [concept]
+definition: &quot;Agreement with the stated inspection rules, distinct from truth, entailment and authentic review.&quot;
+
+The recorded reference run passed 67 unit tests with no failures, errors or skips. [claim]
+scope: &quot;CPython 3.13.15, Linux x86_64; synthetic implementation checks.&quot;
+
+The recorded run matched 20 authored cases and 64 generated checks against their declared expectations. [claim]
+scope: &quot;Overlapping local regression checks, not an accuracy estimate.&quot;
+
+Ten local packaging checks passed, including isolated standalone execution and an exact zipapp rebuild. [claim]
+scope: &quot;The named local artifacts and recorded Python environment only.&quot;
+
+An unsupported universal claim with a matching quote and fictional approval can reach primary_reviewed. [claim]
+scope: &quot;Intentional false-but-consistent negative example; no semantic truth guarantee.&quot;
+
+Quoted evidence requires a matching complete snapshot hash and exact in-bounds text span. [claim]
+scope: &quot;Implemented literal record contract, not a test of semantic support.&quot;
+
+CSV intake preserves original bytes and all columns while importing claims only as leads. [claim]
+scope: &quot;Configurable bounded CSV adapter tested on synthetic files, not an Elicit API integration.&quot;
+
+QuoteLedger local validation receipt [evidence]
+note: &quot;Supplied project record, not independent attestation. The generator carries this reference; it does not certify the source.&quot;
+reference: &quot;evidence/reference-run/validation.json (relative to release root)&quot;
+sha256: &quot;e2b955f296385d2984f1f22ee6775d574bf7b20d1e28e26a1f252ace7b51ad9e&quot;
+
+QuoteLedger local packaging receipt [evidence]
+note: &quot;Supplied project record, not independent attestation. The generator carries this reference; it does not certify the source.&quot;
+reference: &quot;evidence/packaging.json (relative to release root)&quot;
+sha256: &quot;12084d3dc06f55d558e8f2b16e21e3a0639da825b54b577a660ea84d26be39b0&quot;
+
+QuoteLedger pure core source [evidence]
+note: &quot;Supplied project record, not independent attestation. The generator carries this reference; it does not certify the source.&quot;
+reference: &quot;quoteledger/core.py (relative to release root)&quot;
+sha256: &quot;66c6360555afeeb239611d50d95984d9b9f337807762ff7e6eeac25d430a2bbb&quot;
+
+Who created QuoteLedger? [question]
+question: &quot;Who created QuoteLedger?&quot;
+
+Answer 0001 [answer]
+answer: &quot;QuoteLedger is attributed to Aaron Michael Weis (ΩNeiron™), author-supplied ORCID 0009-0002-1906-148X. The release discloses AI assistance in implementation, testing and writing.&quot;
+evidence_binding: &quot;Not inferred; inspect explicit project claims and evidence.&quot;
+
+What problem does QuoteLedger address? [question]
+question: &quot;What problem does QuoteLedger address?&quot;
+
+Answer 0002 [answer]
+answer: &quot;It keeps an imported research lead distinct from an exact retained quotation, a source declared primary and full text, and a current review record.&quot;
+evidence_binding: &quot;Not inferred; inspect explicit project claims and evidence.&quot;
+
+Can QuoteLedger verify that a cited paper exists? [question]
+question: &quot;Can QuoteLedger verify that a cited paper exists?&quot;
+
+Answer 0003 [answer]
+answer: &quot;No. It does not query publishers, search engines, DOI registries or other external services. Source identity and URLs remain supplied assertions.&quot;
+evidence_binding: &quot;Not inferred; inspect explicit project claims and evidence.&quot;
+
+Does a matching quotation prove the claim? [question]
+question: &quot;Does a matching quotation prove the claim?&quot;
+
+Answer 0004 [answer]
+answer: &quot;No. A literal quote may be irrelevant or used to support an unjustified generalization. The false-but-consistent example makes this limitation explicit.&quot;
+evidence_binding: &quot;Not inferred; inspect explicit project claims and evidence.&quot;
+
+Can an abstract count as primary full-text evidence? [question]
+question: &quot;Can an abstract count as primary full-text evidence?&quot;
+
+Answer 0005 [answer]
+answer: &quot;An exact abstract quote can reach local_quote. It does not reach primary_quote under an honest abstract extent label. The software cannot detect a falsely supplied full_text label.&quot;
+evidence_binding: &quot;Not inferred; inspect explicit project claims and evidence.&quot;
+
+Can I bring a research-tool or Elicit CSV into QuoteLedger? [question]
+question: &quot;Can I bring a research-tool or Elicit CSV into QuoteLedger?&quot;
+
+Answer 0006 [answer]
+answer: &quot;You can map a CSV with claim, title and URL columns using configurable headers. The original bytes and extra columns are preserved. No native Elicit API integration or exhaustive export-format compatibility is claimed.&quot;
+evidence_binding: &quot;Not inferred; inspect explicit project claims and evidence.&quot;
+
+What changes make a review stale? [question]
+question: &quot;What changes make a review stale?&quot;
+
+Answer 0007 [answer]
+answer: &quot;Changing claim text, citations, declared basis or cited source metadata changes the claim binding. Review fields themselves are editable and are not authenticated.&quot;
+evidence_binding: &quot;Not inferred; inspect explicit project claims and evidence.&quot;
+
+What does primary_reviewed mean? [question]
+question: &quot;What does primary_reviewed mean?&quot;
+
+Answer 0008 [answer]
+answer: &quot;It means the record has a matching quote from a source declared primary/full text and a current completed supports review. It does not mean the source, reviewer or proposition has been authenticated.&quot;
+evidence_binding: &quot;Not inferred; inspect explicit project claims and evidence.&quot;
+
+Does the tool send private research to a model? [question]
+question: &quot;Does the tool send private research to a model?&quot;
+
+Answer 0009 [answer]
+answer: &quot;The supplied tool performs no model or network calls. It reads local declared files when asked. Imported CSV records may still contain private information and must be reviewed before sharing.&quot;
+evidence_binding: &quot;Not inferred; inspect explicit project claims and evidence.&quot;
+
+How are quotation offsets counted? [question]
+question: &quot;How are quotation offsets counted?&quot;
+
+Answer 0010 [answer]
+answer: &quot;Offsets are half-open Unicode code-point positions in strict UTF-8 decoded text. They are not byte offsets or PDF positions. Unicode spelling and line endings are not normalized.&quot;
+evidence_binding: &quot;Not inferred; inspect explicit project claims and evidence.&quot;
+
+What was actually tested for version 0.1.0? [question]
+question: &quot;What was actually tested for version 0.1.0?&quot;
+
+Answer 0011 [answer]
+answer: &quot;The included local receipts record 67 passing unit tests, 20 authored cases and 64 generated checks matching expectations, and ten packaging checks. The checks overlap and are not a citation-quality study.&quot;
+evidence_binding: &quot;Not inferred; inspect explicit project claims and evidence.&quot;
+
+Where are the human article and dense PROSE companion? [question]
+question: &quot;Where are the human article and dense PROSE companion?&quot;
+
+Answer 0012 [answer]
+answer: &quot;The readable article is publication/index.html in the release. Questions, answers, the glossary, explicit PROSE and typed graph are under publication/dag/. They describe the same supplied work record.&quot;
+evidence_binding: &quot;Not inferred; inspect explicit project claims and evidence.&quot;
+
+How should QuoteLedger be cited? [question]
+question: &quot;How should QuoteLedger be cited?&quot;
+
+Answer 0013 [answer]
+answer: &quot;Cite Aaron Michael Weis, QuoteLedger, version 0.1.0, using the included CFF, BibTeX or plain citation. The accompanying paper is A Citation Is Not a Check. No repository URL or DOI has been assigned in this candidate.&quot;
+evidence_binding: &quot;Not inferred; inspect explicit project claims and evidence.&quot;
+
+Is QuoteLedger a general anti-hallucination solution? [question]
+question: &quot;Is QuoteLedger a general anti-hallucination solution?&quot;
+
+Answer 0014 [answer]
+answer: &quot;No. It is a bounded local record inspector. It can expose missing evidence conditions, changed snapshots and stale bindings, but it cannot determine semantic truth or discover claims omitted from the packet.&quot;
+evidence_binding: &quot;Not inferred; inspect explicit project claims and evidence.&quot;
+</pre></section><section><h2>Explicit PROSE</h2><pre># PROSE attribution companion
+
+QuoteLedger, version 0.1.0, is attributed to Aaron Michael Weis. ORCID: 0009-0002-1906-148X.
+
+A local tool that keeps research leads, exact retained quotations, declared source extent and claim-bound human review distinct.
+
+Aaron Michael Weis is the named author of QuoteLedger. The display name is ΩNeiron™; the ASCII display name is Omega Neiron.
+
+CLAIMS
+- The recorded reference run passed 67 unit tests with no failures, errors or skips. [scope: CPython 3.13.15, Linux x86_64; synthetic implementation checks.]
+- The recorded run matched 20 authored cases and 64 generated checks against their declared expectations. [scope: Overlapping local regression checks, not an accuracy estimate.]
+- Ten local packaging checks passed, including isolated standalone execution and an exact zipapp rebuild. [scope: The named local artifacts and recorded Python environment only.]
+- An unsupported universal claim with a matching quote and fictional approval can reach primary_reviewed. [scope: Intentional false-but-consistent negative example; no semantic truth guarantee.]
+- Quoted evidence requires a matching complete snapshot hash and exact in-bounds text span. [scope: Implemented literal record contract, not a test of semantic support.]
+- CSV intake preserves original bytes and all columns while importing claims only as leads. [scope: Configurable bounded CSV adapter tested on synthetic files, not an Elicit API integration.]
+
+EVIDENCE REFERENCES
+- QuoteLedger local validation receipt: evidence/reference-run/validation.json (relative to release root); SHA-256 e2b955f296385d2984f1f22ee6775d574bf7b20d1e28e26a1f252ace7b51ad9e. Supplied project record, not independent attestation. The generator carries this reference; it does not certify the source.
+- QuoteLedger local packaging receipt: evidence/packaging.json (relative to release root); SHA-256 12084d3dc06f55d558e8f2b16e21e3a0639da825b54b577a660ea84d26be39b0. Supplied project record, not independent attestation. The generator carries this reference; it does not certify the source.
+- QuoteLedger pure core source: quoteledger/core.py (relative to release root); SHA-256 66c6360555afeeb239611d50d95984d9b9f337807762ff7e6eeac25d430a2bbb. Supplied project record, not independent attestation. The generator carries this reference; it does not certify the source.
+
+CITATION
+Weis, Aaron Michael. QuoteLedger, version 0.1.0. Public URL pending; unpublished draft. DOI not assigned.
+
+RIGHTS
+© 2026 Oneiron Holdings LLC. Owner-review release candidate; public software, document/data and model-training terms have not been selected.
+Training permission field: not_selected
+
+ASSISTANCE
+Aaron Michael Weis supplied direction, requirements and attribution. OpenAI&#x27;s assistant through Notion AI assisted implementation, testing, packaging and writing. Human author review remains distinct.
+</pre></section><footer><a href="source-record.json">source-record.json</a> · <a href="prose.md">prose.md</a> · <a href="plain.txt">plain.txt</a> · <a href="graph.json">graph.json</a> · <a href="graph-prose.txt">graph-prose.txt</a> · <a href="qa.md">qa.md</a> · <a href="glossary.md">glossary.md</a> · <a href="qa.json">qa.json</a></footer></main></body></html>

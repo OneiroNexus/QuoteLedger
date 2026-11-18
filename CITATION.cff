@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite the exact QuoteLedger version used."
+title: "QuoteLedger"
+type: software
+version: 0.1.0
+repository-code: "https://github.com/OneiroNexus/QuoteLedger"
+authors:
+  - family-names: Weis
+    given-names: Aaron Michael
+    orcid: "https://orcid.org/0009-0002-1906-148X"
+abstract: >-
+  A local, standard-library reference tool that keeps research leads, exact
+  retained quotations, declared source extent and snapshot-bound review
+  distinct. Includes synthetic examples and explicit negative cases.
+keywords:
+  - retrieval-augmented generation
+  - citation verification
+  - evidence records
+  - research reproducibility
+  - quotation provenance

@@ -1,0 +1,34 @@
+name: Verify QuoteLedger
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: '3.10'
+            options: ''
+          - os: ubuntu-latest
+            python: '3.13'
+            options: ''
+          - os: windows-latest
+            python: '3.12'
+            options: '--allow-windows-symlink-skip'
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python tools/validate.py --output new-validation ${{ matrix.options }}
+      - run: python tools/check_package.py --app dist/quoteledger.pyz --output new-packaging.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: quoteledger-${{ matrix.os }}-${{ matrix.python }}
+          path: |
+            new-validation/
+            new-packaging.json

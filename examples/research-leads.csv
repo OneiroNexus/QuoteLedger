@@ -1,0 +1,3 @@
+claim,title,url,scope,note
+"A fictional trial reports 12 minutes.","Synthetic report A",https://example.org/synthetic-report-a,"One fictional trial","Unverified lead; not real Elicit output"
+"A second fictional lead needs checking.","Synthetic report B",,"Not yet read","Extra columns are retained by intake"
