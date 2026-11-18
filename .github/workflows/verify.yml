@@ -8,24 +8,24 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - os: ubuntu-latest
+          - os: ubuntu-24.04
             python: '3.10'
             options: ''
-          - os: ubuntu-latest
+          - os: ubuntu-24.04
             python: '3.13'
             options: ''
-          - os: windows-latest
+          - os: windows-2025
             python: '3.12'
             options: '--allow-windows-symlink-skip'
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python }}
       - run: python tools/validate.py --output new-validation ${{ matrix.options }}
       - run: python tools/check_package.py --app dist/quoteledger.pyz --output new-packaging.json
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         if: always()
         with:
           name: quoteledger-${{ matrix.os }}-${{ matrix.python }}
